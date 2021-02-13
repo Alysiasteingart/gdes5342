@@ -1,0 +1,103 @@
+/* this is where all of your CSS styles go */
+html, body {
+  width: 100%;
+  height: 100%;
+  background: url(../images/Lemon.jpg) no-repeat center fixed;
+  background-size: 90%;
+  background-color:#ffe1ed;
+}
+
+
+.grid_container01 {
+  width: 500px;
+  height: 100px;
+  position: relative;
+  left: 50%;
+  top: 48%;
+  margin-top: -150px;
+  margin-left: -200px;
+}
+
+@font-face {
+  font-family: 'Bitter';
+  src: url(../fonts/bitter.ttf) format('truetype');
+  font-weight: 500;
+}
+.lemon {
+  font-size: 8em;
+  font-family: 'Bitter';
+  color: lemonchiffon;
+  float: left;
+  letter-spacing: .05em;
+}
+
+
+
+@keyframes l_move {
+  0%    { top: 0px;     left: 0px;    }
+  25%   { top: -100px;  left:0px;     }
+  75%   { top: -100px;  left: 200px;  }
+  80%   {  color: lemonchiffon; }
+  100%  { top: 0px;     left: 200px;       color: lightcoral; }
+}
+
+.l {
+  position: relative;
+  animation: l_move 2s forwards ease-in;
+  animation-delay: 4ms;
+}
+
+
+@keyframes e_move {
+  0%    { top: 0px;     left: 0px;   }
+  25%   { top: 100px;   left: 0px;  }
+  75%   { top: 100px;   left: 76px;  }
+  80%   {  color: lemonchiffon; }
+  100%  { top: 0px;     left: 76px;      color: lightcoral; } 
+}
+.e {
+  position: relative;
+  animation: e_move 2.75s forwards ease-out;
+  animation-delay: 2ms;
+}
+
+@keyframes m_move {
+  0%    {  left: 0px;   }
+  80%   {  color: lemonchiffon; }
+  100%  {  left: -130px; color: lightcoral;}
+}
+.m {
+  position: relative;
+  animation: m_move 3s forwards ease-in-out;
+  animation-delay: .5ms;
+}
+
+@keyframes o_move {
+  0%    { top: 0px;     left: 0px;     }
+  20%   { top: -230px;   left: 0px;     }
+  40%   { top: -230px;   left: -390px;  }
+  60%   { top: 100px;  left: -390px;  }
+  80%   { top: 100px;  left: 0px;     color: lemonchiffon;}
+  100%  { top: 0px;     left: 0px;            color: lightcoral;}
+}
+
+.o {
+  position: relative;
+  animation: o_move 3.6s forwards ease-out; 
+  animation-delay: 8ms;
+}
+
+@keyframes n_move {
+  0%    { top: 0px;     left: 0px;     }
+  20%   { top: 190px;   left: 0px;     }
+  40%   { top: 190px;   left: -370px;  }
+  60%   { top: -130px;  left: -370px;  }
+  80%   { top: -130px;  left: 0px;     color: lemonchiffon;}
+  100%  { top: 0px;     left: 0px;            color: lightcoral;}
+}
+
+.n {
+  position: relative;
+  animation: n_move 3s forwards ease-in;
+  animation-delay: 2ms;
+}
